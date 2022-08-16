@@ -1,0 +1,29 @@
+[E 22:12:09.044 NotebookApp] Exception while loading config file /root/.jupyter/jupyter_notebook_config.py
+    Traceback (most recent call last):
+      File "/usr/local/lib/python3.8/site-packages/traitlets/config/application.py", line 844, in _load_config_files
+        config = loader.load_config()
+      File "/usr/local/lib/python3.8/site-packages/traitlets/config/loader.py", line 625, in load_config
+        self._read_file_as_dict()
+      File "/usr/local/lib/python3.8/site-packages/traitlets/config/loader.py", line 658, in _read_file_as_dict
+        exec(compile(f.read(), conf_filename, "exec"), namespace, namespace)
+      File "/root/.jupyter/jupyter_notebook_config.py", line 1437
+        “c.NotebookApp.ip = ‘0.0.0.0’”
+         ^
+    SyntaxError: invalid character in identifier
+[I 22:12:09.074 NotebookApp] Writing notebook server cookie secret to /root/.local/share/jupyter/runtime/notebook_cookie_secret
+[I 22:12:09.642 NotebookApp] Serving notebooks from local directory: /tmp
+[I 22:12:09.645 NotebookApp] Jupyter Notebook 6.4.12 is running at:
+[I 22:12:09.649 NotebookApp] http://c94bb6b4a103:8888/?token=bfe54528fd02d0c04f2f7290e670e6eef1fc3c130268e2ba
+[I 22:12:09.651 NotebookApp]  or http://127.0.0.1:8888/?token=bfe54528fd02d0c04f2f7290e670e6eef1fc3c130268e2ba
+[I 22:12:09.655 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 22:12:09.670 NotebookApp] No web browser found: could not locate runnable browser.
+[C 22:12:09.674 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///root/.local/share/jupyter/runtime/nbserver-342-open.html
+    Or copy and paste one of these URLs:
+        http://c94bb6b4a103:8888/?token=bfe54528fd02d0c04f2f7290e670e6eef1fc3c130268e2ba
+     or http://127.0.0.1:8888/?token=bfe54528fd02d0c04f2f7290e670e6eef1fc3c130268e2ba
+[I 22:12:56.686 NotebookApp] 302 GET / (172.17.0.1) 2.430000ms
+[I 22:12:56.708 NotebookApp] 302 GET /tree? (172.17.0.1) 5.550000ms
+[I 22:12:59.519 NotebookApp] 302 POST /login?next=%2Ftree%3F (172.17.0.1) 2.350000ms
